@@ -1,0 +1,29 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/sage/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# include aliases and functions
+source ~/.oh-my-zsh/custom/functions/sysfunc.zsh
+source ~/.oh-my-zsh/custom/functions/codefunc.zsh
+source ~/.oh-my-zsh/custom/functions/blogfunc.zsh
+
+# cutefetch and starship prompt
+klr
+eval "$(starship init zsh)"
+
+# include plugins
+fpath=(/usr/share/zsh/site-functions/ $fpath)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
