@@ -13,10 +13,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# set environment variables
+export BAT_THEME="OneHalfDark"
+
 # include aliases and functions
-source ~/.oh-my-zsh/custom/functions/sysfunc.zsh
-source ~/.oh-my-zsh/custom/functions/codefunc.zsh
-source ~/.oh-my-zsh/custom/functions/blogfunc.zsh
+source ~/.zsh/functions/sysfunc.zsh
+source ~/.zsh/functions/codefunc.zsh
+source ~/.zsh/functions/blogfunc.zsh
 
 # cutefetch and starship prompt
 klr
